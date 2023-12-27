@@ -1,7 +1,7 @@
 -- Запит 1: Кількість бджолиних колоній з Алабами
-SELECT state , COUNT(reg) AS Colonies_from_Alabama
+SELECT COUNT(state) AS Colonies_from_Alabama
 FROM State
-WHERE reg = 'Alabama';
+WHERE state = 'Alabama';
 
 -- Запит 2: Вивести максимальну кількість колоній медоносних бджіл з кожного штату
 SELECT State.state, Colonies.max_colonies
