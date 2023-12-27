@@ -8,32 +8,32 @@ VALUES
 (3900, 3900, 870, 22, 290, 0, 0), 
 (305000, 315000, 42000, 13, 54000, 25000, 8);
 
-INSERT INTO State (state, state_code)
+INSERT INTO State (state, state_code, num_colonies)
 VALUES
-('Alabama', 'AL'),
-('Arizona', 'AZ'),
-('Arkansas', 'AR'),
-('California', 'CA'),
-('Colorado', 'CO'),
-('Connecticut', 'CT'),
-('Florida', 'FL');
+('Alabama', 'AL', 7000),
+('Arizona', 'AZ', 35000),
+('Arkansas', 'AR', 13000),
+('California', 'CA', 1440000),
+('Colorado', 'CO', 3500),
+('Connecticut', 'CT', 3900),
+('Florida', 'FL', 305000);
 
-INSERT INTO Period (quarter, year)
+INSERT INTO Period (quarter, year, num_colonies)
 VALUES
-(1, 2015),
-(1, 2015),
-(1, 2015),
-(1, 2015),
-(1, 2015),
-(1, 2015),
-(1, 2015);
+(1, 2015, 7000),
+(2, 2015, 35000),
+(3, 2015, 13000),
+(4, 2015, 1440000),
+(5, 2015, 3500),
+(6, 2015, 3900),
+(7, 2015, 305000);
 
-INSERT INTO Causes_of_colonies_damage (varroa_mites, other_pests_and_parasites, diseases, pesticides, other, unknown)
+INSERT INTO Causes_of_colonies_damage (varroa_mites, other_pests_and_parasites, diseases, pesticides, other, unknown, num_colonies)
 VALUES
-(10.0, 5.4, 0.0, 2.2, 9.1, 9.4),
-(26.9, 20.5, 0.1, 0.0, 1.8, 3.1),
-(17.6, 11.4, 1.5, 3.4, 1.0, 1.0),
-(24.7, 7.2, 3.0, 7.5, 6.5, 2.8),
-(14.6, 0.9, 1.8, 0.6, 2.6, 5.9),
-(2.5, 1.4, 0.0, 0.0, 21.2, 2.4),
-(22.3, 13.5, 0.8, 8.9, 5.1, 4.4);
+(10.0, 5.4, 0.0, 2.2, 9.1, 9.4, 7000),
+(26.9, 20.5, 0.1, 0.0, 1.8, 3.1, 35000),
+(17.6, 11.4, 1.5, 3.4, 1.0, 1.0, 13000),
+(24.7, 7.2, 3.0, 7.5, 6.5, 2.8, 1440000),
+(14.6, 0.9, 1.8, 0.6, 2.6, 5.9, 3500),
+(2.5, 1.4, 0.0, 0.0, 21.2, 2.4, 3900),
+(22.3, 13.5, 0.8, 8.9, 5.1, 4.4, 305000);
