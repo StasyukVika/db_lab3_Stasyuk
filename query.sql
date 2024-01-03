@@ -9,7 +9,7 @@ FROM State
 INNER JOIN Happening ON State.id_state=Happening.id_state
 WHERE Happening.reason = 'weather';
 
--- Запит 2: Вивести назву і рік створення колонії, де кількість бджіл зменшилась
+-- Запит 3: Вивести назву і рік створення колонії, де кількість бджіл зменшилась
 SELECT State.state, Colonies.year
 FROM Happening
 INNER JOIN State ON State.id_state=Happening.id_state
